@@ -99,9 +99,11 @@ if (WITH_WINDOWS_UTF8_FILENAMES)
 endif()
 option(ROCKSDB_BUILD_SHARED "Build shared versions of the RocksDB libraries" ON)
 
-if( NOT DEFINED CMAKE_CXX_STANDARD )
-  set(CMAKE_CXX_STANDARD 17)
-endif()
+# if( NOT DEFINED CMAKE_CXX_STANDARD )
+#   set(CMAKE_CXX_STANDARD 17)
+# endif()
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(CMakeDependentOption)
 
